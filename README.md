@@ -1,4 +1,4 @@
-# Videtur-Storefront-child-theme
+# Videtur Storefront child theme
 
 A child theme with modifications specifically made for Videtur.
 
