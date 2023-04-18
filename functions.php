@@ -31,7 +31,6 @@ function sf_child_theme_dequeue_style() {
  * @author        Rodolfo Melogli, BusinessBloomer.com
  * @testedwith    WooCommerce 7
  */
-  
 add_filter( 'woocommerce_get_price_html', 'bbloomer_hide_price_addcart_not_logged_in', 9999, 2 );
  
 function bbloomer_hide_price_addcart_not_logged_in( $price, $product ) {
