@@ -1,0 +1,183 @@
+/*
+Theme Name:   	Storefront Child Theme
+Theme URI:    	https://github.com/mikuun/Videtur-Storefront-child-theme
+Author:       	Mikaela Lidquist
+Template:     	storefront
+Description:  	This is a child theme for WooThemes StoreFront theme
+Version:      	1.0.0
+Text Domain:  	storefront
+
+ /* --------- Widen full column ---------- */
+ @media (min-width: 768px) {
+    .col-full {
+        max-width: 86.4989378333em;
+    }
+ }
+ /***** -------- Remove sidebar on single product ------- *******/
+ .single-product.right-sidebar .content-area {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+  }
+
+ /* --------------- Typography --------------- */
+ @font-face {
+    font-family: "Berthold Akzidenz Grotesk";
+    src: url('assets/fonts/Berthold Akzidenz Grotesk Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Berthold Akzidenz Grotesk";
+    src: url('assets/fonts/Berthold Akzidenz Grotesk Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: oblique;
+}
+@font-face {
+    font-family: "Berthold Akzidenz Grotesk";
+    src: url('assets/fonts/Berthold Akzidenz Grotesk Medium.otf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Berthold Akzidenz Grotesk";
+    src: url('assets/fonts/Berthold Akzidenz Grotesk Bold.otf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+ body, H1, H2, H3, H4 {
+    font-family: "Berthold Akzidenz Grotesk", Courier, Helvetica, Arial, sans-serif;
+}
+
+ /* --------- Prettify input & dropdowns ---------- */
+select {
+    padding: 7px 40px 7px 12px;
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px -2px #9098A9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 150ms ease;
+    color: #5A667F;
+    background-color: #f5f5fa;
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="password"], 
+input[type="search"], 
+textarea, 
+.input-text {
+    background-color: #f5f5fa;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+input[type="url"]:focus, 
+input[type="password"]:focus, 
+input[type="search"]:focus, 
+textarea:focus, 
+.input-text:focus {
+    background-color: #f0f0fa;
+}
+
+
+
+/* ---------- Breadcrumbs -------------- */
+.storefront-breadcrumb {
+    background-color: #f5f5fa;
+}
+
+.home.page:not(.page-template-template-homepage) .site-header, .home.post-type-archive-product .site-header {
+    margin-bottom: 0em;
+  }
+
+/* ---------- Header -------------- */
+.main-navigation ul li a:hover, 
+.main-navigation ul li:hover > a, 
+.site-title a:hover, 
+.site-header ul.menu li.current-menu-item > a,
+.secondary-navigation ul.menu a:hover {
+    color: #e6007e;
+}
+
+.site-header-cart .widget_shopping_cart {
+    border: 1px #E8EAED solid;
+}
+.site-header-cart .widget_shopping_cart,
+.site-header-cart .widget_shopping_cart .total,
+.site-header-cart .widget_shopping_cart .buttons {
+    background-color: #fff;
+}
+
+.main-navigation ul.menu ul.sub-menu, 
+.main-navigation ul.nav-menu ul.children {
+    background-color: #ffffff;
+    border: 1px solid #E8EAED;
+}
+.main-navigation ul.nav-menu ul li.focus {
+    background-color: rgba(0,0,0,.0);
+}
+.main-navigation ul.nav-menu ul a:hover, 
+.main-navigation ul.nav-menu ul li:hover > a {
+    /*background-color: rgba(0,0,255,.025);*/
+    background-color: rgba(0,0,0,.0);
+}
+
+.secondary-navigation .menu ul a {
+    background: rgba(0,0,0,.0);
+    border: 1px solid #E8EAED;
+}
+.secondary-navigation .menu ul a:hover {
+    /*background: rgba(0,0,255,.025);*/
+    background-color: rgba(0,0,0,.0);
+}
+
+/* ---------- Sidebar -------------- */
+.right-sidebar .widget-area {
+    border-left: solid 1px #eee;
+    padding-left: 30px;
+}
+#block-13.widget {
+    margin: 0 0 0.706325903em !important;
+  }
+
+/* ---------- Tables -------------- */
+table:not(.has-background) th,
+table.woocommerce-table.woocommerce-table--order-details.shop_table.order_details tfoot tr td,
+ul.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+    background-color: #f8f8ff;
+}
+table:not(.has-background) tbody td {
+    background-color: #fdfdff;
+}
+table:not(.has-background) tbody tr:nth-child(2n) td,
+#payment .payment_methods > li .payment_box,
+#payment .place-order {
+    background-color: #fafaff;
+}
+
+#payment .payment_methods > li:not(.woocommerce-notice) {
+    background-color: #f5f5ff;
+}
+#payment .payment_methods > li:not(.woocommerce-notice):hover {
+    background-color: #f0f0ff;
+}
+
+/* ---------------- Notices colours ---------------- */
+.woocommerce-error {
+    background-color: #e1004b;
+  }
+.woocommerce-message {
+    background-color: #008f66;
+}
+.woocommerce-info {
+    background-color: rgb(95, 51, 255);
+}
