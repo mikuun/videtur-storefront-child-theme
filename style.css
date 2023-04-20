@@ -26,24 +26,28 @@ Text Domain:  	storefront
     src: url('assets/fonts/Berthold Akzidenz Grotesk Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "Berthold Akzidenz Grotesk";
     src: url('assets/fonts/Berthold Akzidenz Grotesk Italic.otf') format('truetype');
     font-weight: normal;
     font-style: oblique;
+    font-display: swap;
 }
 @font-face {
     font-family: "Berthold Akzidenz Grotesk";
     src: url('assets/fonts/Berthold Akzidenz Grotesk Medium.otf') format('truetype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "Berthold Akzidenz Grotesk";
     src: url('assets/fonts/Berthold Akzidenz Grotesk Bold.otf') format('truetype');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }
 
  body, H1, H2, H3, H4 {
