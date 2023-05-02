@@ -4,7 +4,7 @@ Theme URI:    	https://github.com/mikuun/Videtur-Storefront-child-theme
 Author:       	Mikaela Lidquist
 Template:     	storefront
 Description:  	This is a child theme for WooThemes StoreFront theme
-Version:      	1.0.1
+Version:      	1.0.2
 Text Domain:  	storefront
 
  /* --------- Widen full column ---------- */
@@ -104,6 +104,13 @@ textarea:focus,
   }
 
 /* ---------- Header -------------- */
+@media (min-width: 768px) {
+    .main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a,
+    .site-header-cart .cart-contents {
+        padding: 1em 1em;
+    }
+}
+
 .main-navigation ul li a:hover, 
 .main-navigation ul li:hover > a, 
 .site-title a:hover, 
@@ -142,6 +149,11 @@ textarea:focus,
 .secondary-navigation .menu ul a:hover {
     /*background: rgba(0,0,255,.025);*/
     background-color: rgba(0,0,0,.0);
+}
+.link-more-prod {
+    background-color: #52002C;
+    border-radius: 35px;
+    font-style: oblique;
 }
 
 /* ---------- Sidebar -------------- */
