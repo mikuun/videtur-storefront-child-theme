@@ -127,14 +127,10 @@ function custom_additional_content_new_order( $content, $object, $email ) {
     return $content;
 }
 
-
-
-
 /**
- * @snippet       Search by SKU @ Shop
+ * @snippet       Also Search by SKU @ Shop
  * @author        Rodolfo Melogli
  * @compatible    WooCommerce 7
- * ****************************** Verkar inte fungera???********
  */
  
  add_filter( 'posts_search', 'bbloomer_product_search_by_sku', 9999, 2 );
@@ -151,3 +147,11 @@ function custom_additional_content_new_order( $content, $object, $email ) {
     $search = str_replace( 'AND (((', "AND (({$wpdb->posts}.ID IN (" . $product_id . ")) OR ((", $search );   
     return $search;   
  }
+
+ /**
+ * @snippet       Disable Single Search Result Redirect | WooCommerce
+ * @author        Rodolfo Melogli
+ * @compatible    WooCommerce 6
+ */
+ 
+add_filter( 'woocommerce_redirect_single_search_result', '__return_false' );
