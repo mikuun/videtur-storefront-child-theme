@@ -155,3 +155,21 @@ function custom_additional_content_new_order( $content, $object, $email ) {
  */
  
 add_filter( 'woocommerce_redirect_single_search_result', '__return_false' );
+
+/**
+ * @snippet       Add Inline Field Error Notifications @ WooCommerce Checkout
+ * @sourcecode    https://businessbloomer.com/?p=86570
+ * @author        Rodolfo Melogli
+ * @compatible    WooCommerce 3.5.4
+ */
+ 
+ add_action( 'woocommerce_before_shop_loop_item_title', 'bbloomer_new_badge_shop_page', 3 );
+          
+ function bbloomer_new_badge_shop_page() {
+    global $product;
+    $newness_days = 30;
+    $created = strtotime( $product->get_date_created() );
+    if ( ( time() - ( 60 * 60 * 24 * $newness_days ) ) < $created ) {
+       echo '<span class="itsnew onsale">' . esc_html__( 'NYHET!', 'woocommerce' ) . '</span>';
+    }
+ }
