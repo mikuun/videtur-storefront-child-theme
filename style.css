@@ -213,4 +213,6 @@ table:not(.has-background) tbody tr:nth-child(2n) td,
     letter-spacing: 1px;
     border: 0px;
     border-radius: 20px;
+    margin: -50px -45px 0px;
+    position: absolute;
 }

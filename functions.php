@@ -163,7 +163,7 @@ add_filter( 'woocommerce_redirect_single_search_result', '__return_false' );
  * @compatible    WooCommerce 3.5.4
  */
  
- add_action( 'woocommerce_before_shop_loop_item_title', 'bbloomer_new_badge_shop_page', 3 );
+ add_action( 'woocommerce_shop_loop_item_title', 'bbloomer_new_badge_shop_page', 3 );
           
  function bbloomer_new_badge_shop_page() {
     global $product;
