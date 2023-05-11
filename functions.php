@@ -173,3 +173,15 @@ add_filter( 'woocommerce_redirect_single_search_result', '__return_false' );
        echo '<span class="itsnew onsale">' . esc_html__( 'NYHET!', 'woocommerce' ) . '</span>';
     }
  }
+
+/* Adds code to header to preload fonts */
+add_action('wp_head', 'your_function_name');
+function your_function_name(){
+?>
+ <link rel="preload" href="/assets/fonts/Berthold Akzidenz Grotesk Regular.otf" as="font" type="font/opentype" crossorigin> 
+ <link rel="preload" href="/assets/fonts/Berthold Akzidenz Grotesk Italic.otf" as="font" type="font/opentype" crossorigin> 
+ <link rel="preload" href="/assets/fonts/Berthold Akzidenz Grotesk Medium.otf" as="font" type="font/opentype" crossorigin> 
+ <link rel="preload" href="/assets/fonts/Berthold Akzidenz Grotesk Bold.otf" as="font" type="font/opentype" crossorigin> 
+
+<?php
+};
