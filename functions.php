@@ -185,3 +185,10 @@ function your_function_name(){
 
 <?php
 };
+
+/*-------------------------- Increase Woocommerce Variation Threshold -----------------------------------*/
+function wc_ajax_variation_threshold_modify( $threshold, $product ){
+	$threshold = '70'; //default is 30
+	return  $threshold;
+  }
+  add_filter( 'woocommerce_ajax_variation_threshold', 'wc_ajax_variation_threshold_modify', 10, 2 );
