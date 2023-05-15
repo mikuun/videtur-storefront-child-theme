@@ -4,7 +4,7 @@ Theme URI:    	https://github.com/mikuun/Videtur-Storefront-child-theme
 Author:       	Mikaela Lidquist
 Template:     	storefront
 Description:  	This is a child theme for WooThemes StoreFront theme
-Version:      	1.0.6
+Version:      	1.0.7
 Text Domain:  	storefront
 
  /* --------- Widen full column ---------- */
@@ -52,6 +52,13 @@ Text Domain:  	storefront
 
  body, H1, H2, H3, H4, H5, H6 {
     font-family: "Berthold Akzidenz Grotesk", Helvetica, Arial, sans-serif;
+}
+
+.woocommerce-message::before,
+.woocommerce-info::before, 
+.woocommerce-error::before, 
+.woocommerce-noreviews::before {
+	font-weight: 900; /* Fixes issue: Storefront not showing icons on messages */
 }
 
  /* --------- Prettify input & dropdowns ---------- */
