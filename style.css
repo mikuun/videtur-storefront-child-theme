@@ -4,7 +4,7 @@ Theme URI:    	https://github.com/mikuun/Videtur-Storefront-child-theme
 Author:       	Mikaela Lidquist
 Template:     	storefront
 Description:  	This is a child theme for WooThemes StoreFront theme
-Version:      	1.0.7
+Version:      	1.0.8
 Text Domain:  	storefront
 
  /* --------- Widen full column ---------- */
@@ -23,28 +23,28 @@ Text Domain:  	storefront
  /* --------------- Typography --------------- */
  @font-face {
     font-family: "Berthold Akzidenz Grotesk";
-    src: url('assets/fonts/Berthold Akzidenz Grotesk Regular.otf') format('opentype');
+    src: url('public_html/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Berthold Akzidenz Grotesk";
-    src: url('assets/fonts/Berthold Akzidenz Grotesk Italic.otf') format('opentype');
+    src: url('public_html/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Italic.otf') format('opentype');
     font-weight: normal;
     font-style: oblique;
     font-display: swap;
 }
 @font-face {
     font-family: "Berthold Akzidenz Grotesk";
-    src: url('assets/fonts/Berthold Akzidenz Grotesk Medium.otf') format('opentype');
+    src: url('public_html/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Medium.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Berthold Akzidenz Grotesk";
-    src: url('assets/fonts/Berthold Akzidenz Grotesk Bold.otf') format('opentype');
+    src: url('public_html/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Bold.otf') format('opentype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
