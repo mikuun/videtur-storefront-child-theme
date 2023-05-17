@@ -23,28 +23,28 @@ Text Domain:  	storefront
  /* --------------- Typography --------------- */
  @font-face {
     font-family: "Berthold Akzidenz Grotesk";
-    src: url('public_html/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Regular.woff2') format('woff2');
+    src: url('wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Berthold Akzidenz Grotesk";
-    src: url('public_html/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Italic.woff2') format('woff2');
+    src: url('wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: oblique;
     font-display: swap;
 }
 @font-face {
     font-family: "Berthold Akzidenz Grotesk";
-    src: url('public_html/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Medium.woff2') format('woff2');
+    src: url('p-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Medium.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Berthold Akzidenz Grotesk";
-    src: url('public_html/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Bold.woff2') format('woff2');
+    src: url('p-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Bold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
