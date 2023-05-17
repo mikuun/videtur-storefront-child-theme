@@ -4,7 +4,7 @@ Theme URI:    	https://github.com/mikuun/Videtur-Storefront-child-theme
 Author:       	Mikaela Lidquist
 Template:     	storefront
 Description:  	This is a child theme for WooThemes StoreFront theme
-Version:      	1.0.8
+Version:      	1.0.9
 Text Domain:  	storefront
 
  /* --------- Widen full column ---------- */
@@ -222,4 +222,12 @@ table:not(.has-background) tbody tr:nth-child(2n) td,
     border-radius: 20px;
     margin: -50px -45px 0px;
     position: absolute;
+}
+
+/* ---------------- Kontakt blob ---------------- */
+.kontakt-blob {
+	border-radius: 200px;
+}
+.kontakt-blob-inner {
+	padding: 10px 20% 0px;
 }
