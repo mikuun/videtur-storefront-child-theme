@@ -178,10 +178,10 @@ add_filter( 'woocommerce_redirect_single_search_result', '__return_false' );
 add_action('wp_head', 'your_function_name');
 function your_function_name(){
 ?>
- <link rel="preload" href="/assets/fonts/Berthold Akzidenz Grotesk Regular.otf" as="font" type="font/opentype" crossorigin> 
- <link rel="preload" href="/assets/fonts/Berthold Akzidenz Grotesk Italic.otf" as="font" type="font/opentype" crossorigin> 
- <link rel="preload" href="/assets/fonts/Berthold Akzidenz Grotesk Medium.otf" as="font" type="font/opentype" crossorigin> 
- <link rel="preload" href="/assets/fonts/Berthold Akzidenz Grotesk Bold.otf" as="font" type="font/opentype" crossorigin> 
+ <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Regular.woff2" as="font" type="font/woff2" crossorigin> 
+ <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Italic.otf" as="font" type="font/woff2" crossorigin> 
+ <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Medium.otf" as="font" type="font/woff2" crossorigin> 
+ <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Bold.otf" as="font" type="font/woff2" crossorigin> 
 
 <?php
 };
