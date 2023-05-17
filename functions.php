@@ -179,9 +179,9 @@ add_action('wp_head', 'your_function_name');
 function your_function_name(){
 ?>
  <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Regular.woff2" as="font" type="font/woff2" crossorigin> 
- <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Italic.otf" as="font" type="font/woff2" crossorigin> 
- <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Medium.otf" as="font" type="font/woff2" crossorigin> 
- <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Bold.otf" as="font" type="font/woff2" crossorigin> 
+ <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Italic.woff2" as="font" type="font/woff2" crossorigin> 
+ <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Medium.woff2" as="font" type="font/woff2" crossorigin> 
+ <link rel="preload" href="/wp-content/themes/videtur-storefront-child-theme/assets/fonts/Berthold Akzidenz Grotesk Bold.woff2" as="font" type="font/woff2" crossorigin> 
 
 <?php
 };
