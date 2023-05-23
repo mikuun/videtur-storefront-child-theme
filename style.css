@@ -231,3 +231,15 @@ table:not(.has-background) tbody tr:nth-child(2n) td,
 .kontakt-blob-inner {
 	padding: 10px 20% 0px;
 }
+
+/* ---------------- Kassan ---------------- */
+#billing_country_field,
+#shipping_country_field {
+	display: none;
+}
+
+/* ---------------- Accordion (startsidan) ---------------- */
+.c-accordion__title {
+    margin-bottom: 0px;
+	margin-top: 5px;
+}
