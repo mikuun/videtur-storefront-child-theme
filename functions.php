@@ -188,3 +188,19 @@ function wc_ajax_variation_threshold_modify( $threshold, $product ){
 	return  $threshold;
   }
   add_filter( 'woocommerce_ajax_variation_threshold', 'wc_ajax_variation_threshold_modify', 10, 2 );
+
+
+/*-------------------------- Load custom translation for Filter Everything plugin -----------------------------------*/
+  add_filter( 'load_textdomain_mofile', 'load_custom_plugin_translation_file', 10, 2 );
+
+/*
+ * Replace 'textdomain' with your plugin's textdomain. e.g. 'woocommerce'. 
+ * File to be named, for example, yourtranslationfile-en_GB.mo
+ * File to be placed, for example, wp-content/languages/textdomain/yourtranslationfile-en_GB.mo
+ */
+function load_custom_plugin_translation_file( $mofile, $domain ) {
+  if ( 'filter-everything' === $domain ) {
+    $mofile = get_stylesheet_directory() . '/assets/languages/filter-everything-' . get_locale() . '.mo';
+  }
+  return $mofile;
+}
