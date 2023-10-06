@@ -188,3 +188,26 @@ function wc_ajax_variation_threshold_modify( $threshold, $product ){
 	return  $threshold;
   }
   add_filter( 'woocommerce_ajax_variation_threshold', 'wc_ajax_variation_threshold_modify', 10, 2 );
+
+  /**
+ * @snippet       Truncate Short Description @ WooCommerce Single
+ */
+add_action( 'woocommerce_after_single_product', 'bbloomer_woocommerce_short_description_truncate_read_more' );
+ 
+function bbloomer_woocommerce_short_description_truncate_read_more() { 
+   wc_enqueue_js( '
+      var show_char = 40;
+      var ellipses = "... ";
+      var content = $(".woocommerce-product-details__short-description").html();
+      if (content.length > show_char) {
+         var a = content.substr(0, show_char);
+         var b = content.substr(show_char - content.length);
+         var html = a + "<span class=\'truncated\'>" + ellipses + "<a class=\'read-more\'>Read more</a></span><span class=\'truncated\' style=\'display:none\'>" + b + "</span>";
+         $(".woocommerce-product-details__short-description").html(html);
+      }
+      $(".read-more").click(function(e) {
+         e.preventDefault();
+         $(".woocommerce-product-details__short-description .truncated").toggle();
+      });
+   ' );
+}
