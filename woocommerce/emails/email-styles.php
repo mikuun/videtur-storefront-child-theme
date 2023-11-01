@@ -232,6 +232,14 @@ img {
 	max-width: 100%;
 }
 
+// Extra fält för lagerplats
+.email_lagerplats { 
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-left: 10px;
+	letter-spacing: 0.05em;
+}
+
 /**
  * Media queries are not supported by all email clients, however they do work on modern mobile
  * Gmail clients and can help us achieve better consistency there.
