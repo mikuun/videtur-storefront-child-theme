@@ -232,7 +232,7 @@ img {
 	max-width: 100%;
 }
 
-// Extra fält för lagerplats
+/** Extra fält för lagerplats, läggs till med ACF och snippet */
 .email_lagerplats { 
 	font-size: 12px;
 	text-transform: uppercase;
