@@ -188,3 +188,46 @@ function wc_ajax_variation_threshold_modify( $threshold, $product ){
 	return  $threshold;
   }
   add_filter( 'woocommerce_ajax_variation_threshold', 'wc_ajax_variation_threshold_modify', 10, 2 );
+
+
+/*-------------------------- Add ACF field "Lagerplats" to New order email -----------------------------------*/
+  // Setting global variable
+function action_woocommerce_email_before_order_table( $order, $sent_to_admin, $plain_text, $email ) {
+    $GLOBALS['email_data'] = array(
+        'email_id'  => $email->id, // The email ID (to target specific email notification)
+        'is_email'  => true // When it concerns a WooCommerce email notification
+    );
+}
+add_action( 'woocommerce_email_before_order_table', 'action_woocommerce_email_before_order_table', 1, 4 );
+ 
+function action_woocommerce_order_item_meta_start( $item_id, $item, $order, $plain_text ) {
+    // Getting the custom 'email_data' global variable
+    $ref_name_globals_var = $GLOBALS;
+    
+    // Isset & NOT empty
+    if ( isset ( $ref_name_globals_var ) && ! empty( $ref_name_globals_var ) ) {
+        // Isset
+        $email_data = isset( $ref_name_globals_var['email_data'] ) ? $ref_name_globals_var['email_data'] : '';
+        
+        // NOT empty
+        if ( ! empty( $email_data ) ) {
+            // Target specific emails, several can be added in the array, separated by a comma
+            $target_emails = array( 'new_order' );
+            
+            // Target specific WooCommerce email notifications
+            if ( in_array( $email_data['email_id'], $target_emails ) ) {
+                // Get product ID
+                $product_id = $item->get_product_id();
+                
+                // Get field
+                $lagerplats = get_field( 'lagerplats', $product_id );
+                
+                // Has some value
+                if ( $lagerplats ) {
+                    echo ' <br><span class="email_lagerplats">Lagerplats: ' . $lagerplats . '</span>';
+                }
+            }           
+        }
+    }
+}
+add_action( 'woocommerce_order_item_meta_start', 'action_woocommerce_order_item_meta_start', 10, 4 );
