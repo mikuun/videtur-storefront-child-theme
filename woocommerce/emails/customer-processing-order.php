@@ -28,7 +28,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <p><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?>
 <?php /* translators: %s: Order number */ ?>
 <!-- ORIGINAL-STRÄNGEN   <p><?php printf( esc_html__( 'Just to let you know &mdash; we\'ve received your order #%s, and it is now being processed:', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p> -->
-<?php printf( esc_html__( 'vi har tagit emot din order med ordernummer #%s och kommer börja behandla den inom kort. Faktura skickas seperat i samband med leverans av ordern. Om du har några frågor får du gärna kontakta oss på shop@videtur.se.', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p>
+<?php printf( esc_html__( 'vi har tagit emot din order med ordernummer #%s och kommer börja behandla den inom kort. Faktura skickas seperat i samband med leverans av ordern. Om du har några frågor får du gärna kontakta oss på order@videtur.se.', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?></p>
 
 <?php
 
