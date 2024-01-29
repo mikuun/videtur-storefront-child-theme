@@ -4,7 +4,7 @@ Theme URI:    	https://github.com/mikuun/Videtur-Storefront-child-theme
 Author:       	Mikaela Lidquist
 Template:     	storefront
 Description:  	This is a child theme for WooThemes StoreFront theme
-Version:      	1.0.16
+Version:      	1.0.17
 Text Domain:  	storefront
 
  /* --------- Widen full column ---------- */
@@ -243,12 +243,6 @@ table:not(.has-background) tbody tr:nth-child(2n) td,
 }
 .kontakt-blob-inner {
 	padding: 10px 20% 0px;
-}
-
-/* ---------------- Kassan ---------------- */
-#billing_country_field,
-#shipping_country_field {
-	display: none;
 }
 
 /* ---------------- Accordion (startsidan) ---------------- */
