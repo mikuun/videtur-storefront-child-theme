@@ -191,9 +191,9 @@ function wc_ajax_variation_threshold_modify( $threshold, $product ){
 
 
 /*-------------------------- Add ACF field "Lagerplats" to New order email -----------------------------------*/
-/****************************** BEHÖVER FIXAS - ORSAKAR KRASCH ********************************************* */
+/********************** BEHÖVER FIXAS - ORSAKAR KRASCH OM ACF FÄLTET INTE FINNS ************************************* */
 
-/*   // Setting global variable
+  // Setting global variable
 function action_woocommerce_email_before_order_table( $order, $sent_to_admin, $plain_text, $email ) {
     $GLOBALS['email_data'] = array(
         'email_id'  => $email->id, // The email ID (to target specific email notification)
@@ -232,4 +232,4 @@ function action_woocommerce_order_item_meta_start( $item_id, $item, $order, $pla
         }
     }
 }
-add_action( 'woocommerce_order_item_meta_start', 'action_woocommerce_order_item_meta_start', 10, 4 ); */
+add_action( 'woocommerce_order_item_meta_start', 'action_woocommerce_order_item_meta_start', 10, 4 );
